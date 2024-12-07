@@ -1,0 +1,191 @@
+/* General Container for the entire app */
+.App {
+  font-family: 'Roboto', sans-serif;
+  padding: 30px;
+  background-color: #f7f7f7; /* Soft light gray background */
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #3a3a3a; /* Dark gray */
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333; /* Dark background */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #007bff; /* Light blue color on hover */
+}
+
+/* Styling for the category buttons */
+
+/* Loading message */
+p {
+  font-size: 18px;
+  color: #555;
+  font-style: italic;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+th, td {
+  padding: 18px;
+  text-align: left;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+/* Table Header Styles */
+th {
+  background-color: #f0f0f0; /* Light gray background for header */
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Table Row Styles */
+td {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Product Image Styling */
+td img {
+  width: 120px; /* Slightly larger images */
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Link Styling */
+a {
+  color: #5a9fff; /* Light blue */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4a8ed8; /* Darker blue when hovered */
+  text-decoration: underline;
+}
+
+/* Category Buttons Container */
+
+
+/* Style for Category Buttons */
+.category-buttons button {
+  background-color: #fff; /* White background */
+  color: #333; /* Text color */
+  border: 2px solid #ccc; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  font-size: 16px; /* Font size */
+  font-weight: 500; /* Slightly bolder text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  outline: none; /* Remove outline */
+  text-transform: capitalize; /* Capitalize first letter */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover Effect for Category Buttons */
+.category-buttons button:hover {
+  background-color: #007bff; /* Light blue background on hover */
+  color: white; /* White text color */
+  border-color: #0056b3; /* Darker border on hover */
+  transform: translateY(-2px); /* Slightly lift the button */
+}
+
+/* Active Button Style for Category Buttons */
+.category-buttons button.active {
+  background-color: #007bff; /* Blue background for active button */
+  color: white; /* White text color */
+  border-color: #0056b3; /* Darker border for active button */
+}
+
+/* Active Button Hover Effect to Make it Stand Out More */
+.category-buttons button.active:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #00408d; /* Even darker border on hover */
+  transform: translateY(0); /* Remove lift effect */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Navbar: Stack links vertically on mobile */
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Category buttons stack vertically */
+  .category-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Table responsive settings for small screens */
+  table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  /* Smaller padding for table cells on mobile */
+  th, td {
+    padding: 12px;
+  }
+
+  /* Smaller image size for mobile */
+  td img {
+    width: 100px;
+  }
+}
